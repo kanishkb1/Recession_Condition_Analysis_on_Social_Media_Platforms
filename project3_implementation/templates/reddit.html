@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Data Analysis - the Gladiators</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="static/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="static/style.css" />
+    <script src = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel = "stylesheet" href = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+<!--        <a class="navbar-brand" target="_blank" href="https://mdbootstrap.com/docs/standard/">-->
+<!--          <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="16" alt="" loading="lazy"-->
+<!--            style="margin-top: -3px;" />-->
+<!--        </a>-->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="col-md-2">
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#twitter">Twitter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reddit.html" rel="nofollow"
+                target="_blank">Reddit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nytimes.html" target="_blank">NY Times</a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="my-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>Reddit</strong></h4>
+          <div class="slidecon">
+              <p><strong>Range</strong></p>
+  <input type="range" id="slider2" min="1" max="70" value="20" oninput="rangeValue.innerText = this.value" onchange="sendData()">
+<p id="rangeValue">20 Days</p>
+
+
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+
+
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="static/images/wfplot.png" alt="my plot" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">WORD FREQUENCY</h5>
+                <p class="card-text">
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="static/images/wcplot.png" alt="my plot" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">WORD CLOUD</h5>
+                <p class="card-text">
+<!--                  Some quick example text to build on the card title and make up the bulk of the-->
+<!--                  card's content.-->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="static/images/saplot.png" alt="my plot" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">SENTIMENTAL ANALYSIS</h5>
+<!--                <p class="card-text">-->
+<!--                  Some quick example text to build on the card title and make up the bulk of the-->
+<!--                  card's content.-->
+<!--                </p>-->
+<!--                <a href="#!" class="btn btn-primary">Read</a>-->
+              </div>
+            </div>
+          </div>
+
+<!--          <div class="col-lg-6 mb-4">-->
+<!--            <div class="card">-->
+<!--              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">-->
+<!--                <img src='static/images/mugraph.png' class="img-fluid" />-->
+<!--                <a href="#!">-->
+<!--                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>-->
+<!--                </a>-->
+<!--              </div>-->
+<!--              <div class="card-body">-->
+<!--                <h5 class="card-title">MEMORY USAGE</h5>-->
+<!--                <p class="card-text">-->
+<!--                  Some quick example text to build on the card title and make up the bulk of the-->
+<!--                  card's content.-->
+<!--                </p>-->
+<!--                <a href="#!" class="btn btn-primary">Read</a>-->
+<!--              </div>-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+
+    </div>
+
+    <hr class="m-0" />
+
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">The Gladiators</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="static/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="static/script.js"></script>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script>
+  function showMessage(value) {
+    document.getElementById("message").innerHTML  =  value;
+  }
+
+  function sendData() {
+        const valDays = document.getElementById("slider2").value;
+        const dict_values = {valDays}
+        const s = JSON.stringify(dict_values);
+        console.log(s);
+        window.alert(s)
+        $.ajax({
+            url:"/redditgraphs",
+            type:"POST",
+            contentType: "application/json",
+            data: JSON.stringify(s)});
+
+  }
+</script>
+</html>
