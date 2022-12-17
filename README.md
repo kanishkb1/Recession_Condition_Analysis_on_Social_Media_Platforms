@@ -1,8 +1,8 @@
 # Social Media Data Science Pipeline (CS 515)
 
-![bu](.img/bulogo.png)
 
-## Project-1 Implementation
+
+## Project Implementation
 
 ### Group 
 > _the_gladiators_
